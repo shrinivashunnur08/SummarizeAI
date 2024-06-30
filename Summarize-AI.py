@@ -60,4 +60,4 @@ if st.button("Summarize 📃"):
         st.markdown("## Summarize AI says:")
         st.write(summary)
     else:
-        st.write("No transcript available for the selected language.")
+        st.write("Oops, There is no transcript available for the selected language 😕")
