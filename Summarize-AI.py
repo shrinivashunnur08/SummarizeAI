@@ -9,7 +9,7 @@ load_dotenv()  # Load all the environment variables
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 prompt = """
-You are a YouTube video summarizer. Your task is to read the provided transcript and create a concise summary of the video's content in English. Please condense the key points and main ideas into a list of bullet points, ensuring the summary is no longer than 500-1500 words. Use clear and precise language. 
+You are a YouTube video summarizer. Your task is to read the provided transcript and create a concise summary of the video's content in English. Please condense the key points and main ideas into a list of bullet points, ensuring the summary can be longer than 500-1500 words. Use clear and precise language. 
 Note: Even if the transcript is in Hindi, Marathi, Tamil, Kannada, or any other language, the summary should be in English.
 """
 
