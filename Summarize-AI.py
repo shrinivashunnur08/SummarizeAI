@@ -39,13 +39,14 @@ def generate_gemini_content(transcript_text, prompt):
 st.title("Welcome to Shree's Summarize-AI App 🤖")
 youtube_link = st.text_input("Enter the YouTube video link: (Ensure the URL contains characters up to the '&' symbol, but does not include the '&' itself)")
 
-language = st.selectbox("Select Transcript Language", ["English", "Hindi", "Marathi", "Tamil", "Kannada"])
+language = st.selectbox("Select Transcript Language", ["English", "Hindi", "Marathi", "Tamil", "Kannada", "Bengali"])
 language_code = {
     'English': 'en',
     'Hindi': 'hi',
     'Marathi': 'mr',
     'Tamil': 'ta',
-    'Kannada': 'kn'
+    'Kannada': 'kn',
+    'Bengali': 'bn'
 }[language]
 
 if youtube_link:
